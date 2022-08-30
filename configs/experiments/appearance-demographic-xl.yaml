@@ -1,0 +1,7 @@
+$extends$: configs/model_sizes/xl.yaml
+
+appearance_categories:
+  - gender
+  - body
+  - viewpoint
+  - age-group

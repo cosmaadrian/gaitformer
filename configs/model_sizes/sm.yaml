@@ -1,0 +1,14 @@
+$extends$: configs/base_config.yaml
+
+model_args:
+  in_channels: 3
+  embedding_size: 256
+  attribute_embedding_size: 32
+  projection_size: 128
+  dropout_prob: 0.1
+  n_layers: 4
+  n_heads: 8
+  edge_importance_weighting: True
+  graph_args:
+    layout: 'openpose'
+    strategy: 'spatial'

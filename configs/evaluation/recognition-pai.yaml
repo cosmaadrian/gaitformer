@@ -1,0 +1,1 @@
+evaluators: [casia-recognition, fvg-recognition, pai]

@@ -1,0 +1,6 @@
+$extends$: configs/model_sizes/xl.yaml
+
+appearance_categories:
+  - accessory
+  - footware
+  - clothing

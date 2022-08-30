@@ -1,0 +1,6 @@
+$extends$: configs/model_sizes/sm.yaml
+
+appearance_categories:
+  - accessory
+  - footware
+  - clothing

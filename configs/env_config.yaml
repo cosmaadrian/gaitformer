@@ -1,0 +1,9 @@
+genesis:
+    eval-data-dir: '/media/ssd/gait-recognition/data/'
+    data-dir: '/media/ssd/pai/'
+    ouisir-dir: '/media/ssd/adrian/data/ouisir/'
+
+exodus:
+    eval-data-dir: '/media/ssd/adrian/data/'
+    data-dir: '/media/ssd/adrian/data/'
+    ouisir-dir: '/media/ssd/adrian/data/ouisir/'

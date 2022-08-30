@@ -1,0 +1,83 @@
+dataset: uwg-dense
+trainer: weak-multi-task
+evaluators: [casia-recognition]
+
+use_cache: False
+
+appearance_categories:
+  - gender
+  - body
+  - viewpoint
+  - age-group
+  - accessory
+  - footware
+  - clothing
+  - apparent-action
+
+epochs: 300
+batch_size: 512
+
+period_length: 48
+
+eval_every: 1
+accumulation_steps: 1
+
+save_to_drive: True
+
+stop_teacher_forcing_after: 0
+round_attributes: False
+
+appearance_loss_weight: 0.5
+
+paces: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2]
+permutation: False
+permutation_size: 6
+
+num_views: 2
+
+loss_args:
+  temperature: 0.01
+
+early_stopping:
+  patience: 15
+  monitor: val_loss
+
+lr_scheduler:
+  - name: cyclic
+    start_epoch: 0
+    end_epoch: 200
+    base_lr: 0.001
+    max_lr:  0.015
+    mode: triangular
+    step_size_up: 10
+    step_size_down: 10
+  - name: cyclic
+    start_epoch: 200
+    end_epoch: 250
+    base_lr: 0.0001
+    max_lr:  0.0015
+    mode: triangular
+    step_size_up: 10
+    step_size_down: 10
+  - name: cyclic
+    start_epoch: 250
+    end_epoch: 400
+    base_lr: 0.0001
+    max_lr:  0.0015
+    mode: triangular2
+    step_size_up: 20
+    step_size_down: 20
+
+model: gcn-transformer
+model_args:
+  in_channels: 3
+  embedding_size: 256
+  attribute_embedding_size: 32
+  projection_size: 128
+  dropout_prob: 0.1
+  n_layers: 4
+  n_heads: 8
+  edge_importance_weighting: True
+  graph_args:
+    layout: 'openpose'
+    strategy: 'spatial'
