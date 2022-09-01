@@ -42,3 +42,5 @@ This work relies on our previous paper [WildGait: Learning Gait Representations 
   DOI = {10.3390/s21248387}
 }
 ```
+### License
+This work is protected by CC BY-NC-ND 4.0 License (Non-Commercial & No Derivatives). 
