@@ -22,7 +22,18 @@ This repo is based on [acumen-template](https://github.com/cosmaadrian/acumen-te
 If you found our work useful, please cite our works:
 
 ```
-  TBD - Under Review
+@Article{cosma22gaitformer,
+  AUTHOR = {Cosma, Adrian and Radoi, Emilian},
+  TITLE = {Learning Gait Representations with Noisy Multi-Task Learning},
+  JOURNAL = {Sensors},
+  VOLUME = {22},
+  YEAR = {2022},
+  NUMBER = {18},
+  ARTICLE-NUMBER = {6803},
+  URL = {https://www.mdpi.com/1424-8220/22/18/6803},
+  ISSN = {1424-8220},
+  DOI = {10.3390/s22186803}
+}
 ```
 
 This work relies on our previous paper [WildGait: Learning Gait Representations from Raw Surveillance Streams](https://www.mdpi.com/1424-8220/21/24/8387). Please consider citing with: 
