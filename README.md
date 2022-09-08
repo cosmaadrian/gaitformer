@@ -21,6 +21,8 @@ This repo is based on [acumen-template](https://github.com/cosmaadrian/acumen-te
 
 If you found our work useful, please cite our works:
 
+[Learning Gait Representations with Noisy Multi-Task Learning](https://www.mdpi.com/1424-8220/22/18/6803)
+
 ```
 @Article{cosma22gaitformer,
   AUTHOR = {Cosma, Adrian and Radoi, Emilian},
