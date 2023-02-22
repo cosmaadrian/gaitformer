@@ -4,10 +4,14 @@
 
 *Gait analysis is proven to be a reliable way to perform person identification without relying on subject cooperation. Walking is a biometric that does not significantly change in short periods of time and can be regarded as unique to each person. So far, the study of gait analysis focused mostly on identification and demographics estimation, without considering many of the pedestrian attributes that appearance-based methods rely on. In this work, alongside gait-based person identification, we explore pedestrian attribute identification solely from movement patterns. We propose DenseGait, the largest dataset for pretraining gait analysis systems containing 217K anonymized tracklets, annotated automatically with 42 appearance attributes. DenseGait is constructed by automatically processing video streams and offers the full array of gait covariates present in the real world. We make the dataset available to the research community. Additionally, we propose GaitFormer, a transformer-based model that after pretraining in a multi-task fashion on DenseGait, achieves 92.5% accuracy on CASIA-B and 85.33% on FVG, without utilizing any manually annotated data. This corresponds to a +14.2% and +9.67% accuracy increase compared to similar methods. Moreover, GaitFormer is able to accurately identify gender information and a multitude of appearance attributes utilizing only movement patterns.*
 
+![](Training.drawio.png)
+
 
 ### Getting Started
 
 In this work, we proposed the DenseGait dataset, an automatically gathered dataset with 217k pose sequences and 42 appearance attributes, and GaitFormer, a transformer model for gait recognition, which operates on sequences of skeletons.
+
+![](attributes.drawio.png)
 
 DenseGait can be downloaded at: 
 `https://bit.ly/3SLO8RW`
